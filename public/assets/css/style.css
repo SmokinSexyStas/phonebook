@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm;
+}
+
+input.border-red-500 {
+    @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+}
+
+.fixed.inset-0.bg-gray-600.bg-opacity-50 {
+    @apply z-50 overflow-y-auto;
+}
+
+button:disabled {
+    @apply opacity-75 cursor-not-allowed;
+}
+
+img.rounded-full {
+    @apply object-cover w-full h-full;
+}

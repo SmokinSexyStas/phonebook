@@ -1,0 +1,18 @@
+{
+  "name": "phonebook/app",
+  "description": "Телефонна книга - веб-додаток",
+  "type": "project",
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
